@@ -1,0 +1,84 @@
+.chicago {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  max-width: 1060px;
+  margin: 60px auto;
+  padding: 40px 20px 80px;
+  box-sizing: border-box;
+}
+
+.chicago-content {
+  color: #495e57;
+}
+
+.chicago-eyebrow {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #495e57;
+  margin: 0 0 12px;
+}
+
+.chicago-content h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 48px;
+  line-height: 0.95;
+  color: #333333;
+  margin: 0 0 20px;
+}
+
+.chicago-content > p:not(.chicago-eyebrow) {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.chicago-images {
+  position: relative;
+  min-height: 390px;
+}
+
+.chicago-images img {
+  display: block;
+  width: 75%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.chicago-restaurant {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chicago-food {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 5px solid white;
+}
+
+@media (max-width: 768px) {
+  .chicago {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 30px auto;
+    padding: 20px 16px 40px;
+  }
+
+  .chicago-content h2 {
+    font-size: 42px;
+  }
+
+  .chicago-images {
+    min-height: 300px;
+  }
+
+  .chicago-images img {
+    height: 220px;
+  }
+}

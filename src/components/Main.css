@@ -1,0 +1,191 @@
+/* =========================
+   HERO / MAIN
+   ========================= */
+
+.main-content {
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  background-color: #495e57;
+  overflow: visible;
+}
+
+/* Contenido del texto */
+.main-text {
+  flex: 0 1 500px;
+  margin: 0;
+  padding: 40px 20px 20px;
+}
+
+.main-text h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 48px;
+  line-height: 0.9;
+  margin: 0;
+  color: #f4ce14;
+}
+
+.main-text h3 {
+  font-family: "Markazi Text", serif;
+  font-size: 30px;
+  line-height: 1;
+  margin: 5px 0 10px;
+  color: #edefee;
+}
+
+.main-text p {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  color: #edefee;
+}
+
+/* Botón */
+
+.reserve-button {
+  border: none;
+  border-radius: 20px;
+  padding: 12px 25px;
+  margin-top: 15px;
+  background-color: #f4ce14;
+  color: #333333;
+  font-family: "Karla", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reserve-button:hover {
+  background-color: #e5bd0f;
+}
+
+/* Imagen principal */
+
+#main-image {
+  position: relative;
+  top: 30px;
+  transform: translateX(-30px);
+  width: 300px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* =========================
+   SPECIALS HEADER
+   ========================= */
+
+.body-text {
+  width: 100%;
+}
+
+.body-text-container {
+  max-width: 850px;
+  margin: 60px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.body-text-container h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 42px;
+  margin: 0;
+  color: #333333;
+}
+
+#online-menu {
+  margin: 0;
+  border-radius: 10px;
+  padding: 15px 40px;
+  transform: translateX(-30px);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 55%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  /* Hero / CallToAction */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    height: auto;
+    min-height: 0;
+    padding: 20px 16px;
+  }
+
+  .main-text {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-text h2,
+  .main-text h3,
+  .main-text p {
+    margin: 0;
+  }
+
+  #main-image {
+    position: static;
+    transform: none;
+    display: block;
+    flex: none;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  .reserve-button {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  /* Specials header */
+  .body-text-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 35px auto 20px;
+  }
+
+  #online-menu {
+    margin: 0;
+    border-radius: 10px;
+    padding: 15px 40px;
+    display: block;
+    transform: none;
+  }
+
+  /* Specials cards */
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 16px 30px;
+    width: 100%;
+  }
+}

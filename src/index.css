@@ -1,0 +1,15 @@
+html,
+body,
+:root {
+  --content-width: 1060px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
